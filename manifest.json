@@ -1,0 +1,8 @@
+{
+  "application": {
+    "name": "qss",
+    "description": "add description",
+    "multi_round": false
+  },
+  "remote": {}
+}

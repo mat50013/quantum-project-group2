@@ -1,0 +1,5400 @@
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.676012'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.783676'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.783689'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.783702'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.888731'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.888744'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.945094'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.945105'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.945115'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.945126'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.945131'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.945136'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:33.976380'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.082767'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.082778'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.082788'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.082795'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.082801'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.114085'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.220492'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.220504'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.220513'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.220518'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.220523'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.233033'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.370705'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.370716'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.370729'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.370734'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.370740'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.395768'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.502162'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.502171'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.502179'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.502184'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.502190'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.520956'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.621104'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.621112'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.621120'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.621125'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.621132'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.702436'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.815117'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.815127'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.815136'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.815141'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.815147'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.846468'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.846475'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.846481'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.846490'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.959122'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.959133'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:34.996709'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.103111'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.103121'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.103129'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.103134'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.103139'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.190756'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.190764'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.190770'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.190779'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.290933'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.290941'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.334716'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.334725'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.334732'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.334740'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.441117'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.441126'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.453657'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.453664'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.453671'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.453679'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.560073'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.560081'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.591378'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.591385'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.591391'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.591398'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.708940'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.708948'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.746509'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.746522'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.746528'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.746535'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.846650'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.846663'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.871711'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.871720'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.871726'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.871734'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.978081'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:35.978090'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.003135'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.003144'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.003150'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.003157'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.115799'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.115807'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.140893'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.247282'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.247290'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.247299'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.247305'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.247312'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.271512'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.376542'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.376550'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.376560'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.376565'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.376573'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.401609'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.506635'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.506647'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.506658'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.506665'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.506672'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.544210'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.650086'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.650095'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.650103'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.650107'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.650112'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.668032'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.773942'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.773950'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.773958'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.773962'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.773967'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.823151'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.929066'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.929078'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.929090'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.929097'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.929104'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:36.953643'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.059179'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.059189'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.059197'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.059201'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.059207'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.083735'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.189301'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.189312'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.189320'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.189325'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.189331'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.201288'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.306883'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.306893'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.306906'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.306911'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.306917'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.338207'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.455753'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.455765'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.455775'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.455781'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.455787'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.487070'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.593462'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.593473'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.593482'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.593487'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.593492'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.649837'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.756224'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.756235'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.756242'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.862638'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.862647'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.875177'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.875185'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.875192'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:37.875200'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.000369'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.000378'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.012897'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.012905'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.012911'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.012920'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.131832'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.131844'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.181911'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.311948'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.311957'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.311965'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.418340'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.418350'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.437126'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.437132'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.437138'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.437146'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.542699'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.542709'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.555233'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.661648'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.661658'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.661667'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.661672'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.661677'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.674180'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.774354'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.774361'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.774369'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.887035'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.887056'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:38.944807'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.051211'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.051234'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.051249'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.051257'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.051263'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.082589'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.189001'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.189008'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.189017'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.189022'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.189028'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.237719'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.237727'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.237734'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.237741'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.344142'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.344154'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.387984'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.387992'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.387998'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.388005'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.488181'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.488190'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.506941'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.506951'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.506958'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.506966'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.625867'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.625876'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.644672'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.644680'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.644686'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.644693'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.762232'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.762241'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.781046'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.781055'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.781060'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.781068'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.887418'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.887427'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.899962'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.899971'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.899978'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:39.899985'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.000130'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.000138'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.050226'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.050236'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.050243'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.050250'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.156619'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.156628'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.181837'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.181843'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.181850'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.181857'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.288238'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.288249'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.300775'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.300783'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.300790'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.300797'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.419706'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.419713'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.438522'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.438531'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.438537'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.438544'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.544877'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.544888'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.563675'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.563683'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.563689'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.563696'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.663786'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.663796'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.688833'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.688840'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.688846'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.688853'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.795152'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.795181'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.813948'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.931504'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.931514'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.931523'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.931529'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.931536'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:40.969085'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.074282'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.074293'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.074301'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.074306'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.074312'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.086651'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.193483'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.193492'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.193499'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.193504'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.193510'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.212274'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.318676'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.318685'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.318692'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.318697'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.318702'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.349980'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.456382'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.456391'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.456399'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.456403'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.456409'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.487687'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.594081'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.594090'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.594097'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.594101'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.594107'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.631658'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.736693'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.736701'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.736709'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.736713'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.736719'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.755466'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.861908'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.861918'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.861927'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.861932'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.861938'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.874430'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.974565'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.974574'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:41.974583'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.080971'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.080980'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.099750'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.099757'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.099763'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.099771'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.206169'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.206178'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.218690'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.218698'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.218710'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.218718'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.329967'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.329974'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.380060'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.380067'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.380074'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.380082'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.486447'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.486456'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.505237'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.505245'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.505252'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.505261'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.611613'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.611627'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.636670'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.636678'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.636684'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.636691'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.743075'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.743085'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.761856'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.761864'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.761871'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.761879'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.879408'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.879416'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.898215'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.898221'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.898226'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:42.898233'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.004589'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.004599'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.042153'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.148545'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.148555'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.148563'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.148568'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.148573'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.167341'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.273747'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.273771'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.273783'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.386504'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.386533'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.430682'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.430705'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.430713'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.430723'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.537705'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.537728'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.556494'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.556504'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.556511'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.556519'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.674124'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.674158'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.692943'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.692957'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.692964'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.692973'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.799347'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.799368'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.830704'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.936755'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.936775'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.936790'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.936795'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.936801'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:43.954570'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.060382'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.060400'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.060411'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.060417'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.060423'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.072138'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.177364'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.177374'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.177383'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.177389'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.177397'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.195962'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.301230'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.301242'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.301252'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.407429'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.407440'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.425112'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.425120'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.425127'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.425135'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.530164'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.530179'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.542703'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.542709'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.542715'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.542723'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.649093'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.649104'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.661645'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.661655'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.661663'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.661673'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.768040'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.768048'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.793090'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.899537'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.899563'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:44.899575'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.006371'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.006391'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.020362'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.127394'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.127424'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.127435'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.127442'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.127447'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.146183'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.256315'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.256324'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.256332'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.256337'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.256343'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.305653'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.410685'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.410695'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.410703'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.410708'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.410714'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.429466'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.535339'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.535354'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.535364'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.535370'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.535375'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.553282'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.659174'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.659183'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.659191'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.765633'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.765640'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.790644'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.790653'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.790659'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:45.790667'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.003462'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.003471'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.028562'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.028569'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.028576'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.028582'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.028586'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.028592'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.053551'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.177353'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.177361'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.177369'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.177373'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.177379'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.202409'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.308794'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.308803'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.308811'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.308816'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.308822'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.321333'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.427754'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.427763'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.427770'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.427775'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.427781'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.446552'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.559205'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.559217'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.559226'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.665634'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.665645'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.684421'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.801970'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.801979'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.801989'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.802000'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.802007'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.827041'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.939794'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.939801'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.939810'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.939815'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.939821'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:46.964757'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.102464'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.102473'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.102482'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.102487'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.102493'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.114994'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.221378'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.221388'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.221397'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.327779'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.327788'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.382796'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.382801'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.382807'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.382815'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.482947'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.482957'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.539296'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.646131'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.646142'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.646150'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.646155'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.646160'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.658659'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: Y'
+  MSG: Y
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.765068'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.765080'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.765091'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.884024'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.884033'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.902819'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.902828'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.902834'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:47.902842'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.009213'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.009222'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.028016'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.028024'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.028032'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.028041'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.145587'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.145599'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.170643'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.170650'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: Y'
+  MSG: Y
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.170658'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.170665'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: Y'
+  MSG: Y
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.277027'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: Y'
+  MSG: Y
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.277038'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from alice...
+  MSG: null
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.302071'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 40
+  INS: RECV
+  LOG: 'Message received from alice: X'
+  MSG: X
+  REC: charlie
+  SEN: alice
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.302077'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 41
+  INS: SEND
+  LOG: 'Send classical message to alice: X'
+  MSG: X
+  REC: alice
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.302083'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: WAIT_RECV
+  LOG: Waiting for a classical message from bob...
+  MSG: null
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.302090'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 43
+  INS: RECV
+  LOG: 'Message received from bob: X'
+  MSG: X
+  REC: charlie
+  SEN: bob
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.408468'
+- HFL: /Users/matei/qss_project/qss/exp_baseline/input/app_charlie.py
+  HLN: 44
+  INS: SEND
+  LOG: 'Send classical message to bob: X'
+  MSG: X
+  REC: bob
+  SEN: charlie
+  SOD: 0
+  WCT: '2026-01-07 16:47:48.408476'
