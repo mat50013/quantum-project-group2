@@ -1,107 +1,159 @@
+from dataclasses import dataclass
 import math
+from typing import Optional
+
+from netqasm.sdk.classical_communication.message import StructuredMessage
 from netqasm.sdk.external import NetQASMConnection, Socket
 from netqasm.sdk import EPRSocket
 from netqasm.sdk.toolbox.multi_node import create_ghz
+
 import random
 
-def main(app_config=None, num_rounds=50, x=0, y=0):
-    # Initialize classical communication socket with Bob (coordinator)
-    socket_bob = Socket("alice", "bob", log_config=app_config.log_config)
+def distribute_ghz_states(conn, up_epr_socket, up_socket, n_bits):
+    bases = [random.randint(0, 1) for _ in range(n_bits)] # 0 = X, 1 = Y
+    outcomes = [None for _ in range(n_bits)]
+
+    for i in range(n_bits):
+        q, _ = create_ghz(
+            up_epr_socket=up_epr_socket,
+            up_socket=up_socket,
+            do_corrections=True
+        )
+        if bases[i] == 1:
+            q.rot_Z(n=3, d=1)
+        q.H()
+        m = q.measure()
+        conn.flush()
+        outcomes[i] = int(m)
+
+    return bases, outcomes
+
+def exchange_bases(bob_socket, charlie_socket, triplets_info):
+    alice_bases = [triplet.alice_basis for triplet in triplets_info]
+    bob_bases = bob_socket.recv_structured().payload
+    charlie_bases = charlie_socket.recv_structured().payload
+
+    bob_socket.send_structured(StructuredMessage(header="Bases", payload=alice_bases))
+    bob_socket.send_structured(StructuredMessage(header="Bases", payload=charlie_bases))
+
+    charlie_socket.send_structured(StructuredMessage(header="Bases", payload=alice_bases))
+    charlie_socket.send_structured(StructuredMessage(header="Bases", payload=bob_bases))
+
+    for i in range(len(triplets_info)):
+        triplets_info[i].bob_basis = bob_bases[i]
+        triplets_info[i].charlie_basis = charlie_bases[i]
+    
+    return triplets_info
+
+def sift_bases(triplets_info):
+    for triplet in triplets_info:
+        if (triplet.alice_basis + triplet.bob_basis + triplet.charlie_basis) % 2 == 0:
+            triplet.is_valid = True
+        else:
+            triplet.is_valid = False
+
+    return triplets_info
+
+def receive_outcomes_for_qber(bob_socket, charlie_socket, triplets_info):
+    bob_outcomes = bob_socket.recv_structured().payload
+    charlie_outcomes = charlie_socket.recv_structured().payload
+
+    for outcome in bob_outcomes:
+        triplets_info[outcome[0]].bob_outcome = outcome[1]
+    
+    for outcome in charlie_outcomes:
+        triplets_info[outcome[0]].charlie_outcome = outcome[1]
+    
+    return triplets_info
+
+def calculate_qber(triplets_info, test_num_rounds):
+    qber = 0
+
+    for triplet in triplets_info:
+        if triplet.is_valid and triplet.bob_outcome != None and triplet.charlie_outcome != None:
+            xor = triplet.alice_outcome ^ triplet.bob_outcome ^ triplet.charlie_outcome
+
+            if triplet.alice_basis + triplet.bob_basis + triplet.charlie_basis == 0:
+                qber += xor % 2 + 1
+            else:
+                qber += xor
+    
+    return 1 - (qber / test_num_rounds)
+
+
+@dataclass
+class TripletInfo:
+    """Information that Alice has about one generated triplet.
+    The information is filled progressively during the protocol."""
+
+    # Index in list of all generated pairs.
+    index: int
+
+    # True if Bob and Charlie can deduct Alice's bit when they cooperate
+    is_valid: Optional[bool] = None
+
+    # Basis Alice measured in. 0 = X, 1 = Y.
+    alice_basis: Optional[int] = None
+
+    # Basis Bob measured in. 0 = X, 1 = Y.
+    bob_basis: Optional[int] = None
+
+    # Basis Charlie measured in. 0 = X, 1 = Y.
+    charlie_basis: Optional[int] = None
+
+    # Alice measurement outcome (0 or 1).
+    alice_outcome: Optional[int] = None
+
+    # Bob measurement outcome (0 or 1).
+    bob_outcome: Optional[int] = None
+
+    # Charlie measurement outcome (0 or 1).
+    charlie_outcome: Optional[int] = None
+
+def main(app_config=None, num_rounds=4):
+    # Initialize classical communication sockets
+    bob_socket = Socket("alice", "bob", log_config=app_config.log_config)
+    charlie_socket = Socket("alice", "charlie", log_config=app_config.log_config)
 
     # Initialize quantum EPR socket for entanglement generation with Bob
-    epr_socket = EPRSocket("bob")
+    bob_epr_socket = EPRSocket("bob")
 
     # Create NetQASM connection for quantum operations
     alice = NetQASMConnection(
         "alice",
         log_config=app_config.log_config,
-        epr_sockets=[epr_socket]
+        epr_sockets=[bob_epr_socket]
     )
 
-    valid_results = []  # Store correctness of each valid round (1=correct, 0=error)
-    all_bases = []  # Store basis choices for all rounds (for analysis)
-
     with alice:
-        for round_num in range(num_rounds):
-            # Create GHZ state |000⟩ + |111⟩ shared between Alice, Bob, Charlie
-            # Alice receives her qubit from the GHZ state creation
-            q, m = create_ghz(
-                up_epr_socket=epr_socket,
-                up_socket=socket_bob,
-                do_corrections=True  # Apply corrections automatically for perfect GHZ state
+        bases, outcomes = distribute_ghz_states(alice, bob_epr_socket, bob_socket, num_rounds)
+
+    triplets_info = []
+    for i in range(num_rounds):
+        triplets_info.append(
+            TripletInfo(
+                index=i,
+                alice_basis=bases[i],
+                alice_outcome=outcomes[i]
             )
+        )
+        
+    triplets_info = exchange_bases(bob_socket, charlie_socket, triplets_info)
+    triplets_info = sift_bases(triplets_info)
 
-            # Alice randomly chooses measurement basis (X or Y)
-            basis = random.choice(['X', 'Y'])
+    valid_amount = sum(list(map(lambda triplet: 1 if triplet.is_valid else 0, triplets_info)))
 
-            # Apply basis rotation gates before measurement
-            # We measure in computational (Z) basis after rotation (for some reason here measuring directly into that basis does not work so that's why rotate and after that)
-            if basis == 'X':
-                # H gate: Rotates Z-basis to X-basis
-                # Measures X observable: |+⟩ → 0, |-⟩ → 1
-                q.H()
-            elif basis == 'Y':
-                # S-dagger (not implemented directly in the library) = Rz(-π/2) followed by H: Rotates Z-basis to Y-basis
-                # Measures Y observable: |+i⟩ → 0, |-i⟩ → 1
-                q.rot_Z(angle=-math.pi/2)
-                q.H()
+    triplets_info = receive_outcomes_for_qber(bob_socket, charlie_socket, triplets_info)
 
-            # Perform measurement (in computational basis after rotation)
-            result = q.measure()
-            alice.flush()  # Execute all queued quantum operations
-            outcome = int(result)
+    qber = calculate_qber(triplets_info, max(valid_amount // 4, 1)) if valid_amount > 0 else -1
 
-            # Send Alice's basis choice and measurement outcome to Bob
-            socket_bob.send(basis)
-            socket_bob.send(str(outcome))
-
-            # Receive Bob's and Charlie's basis choices and outcomes
-            # Bob acts as coordinator and relays Charlie's information
-            bob_basis = socket_bob.recv()
-            bob_outcome = int(socket_bob.recv())
-            charlie_basis = socket_bob.recv()
-            charlie_outcome = int(socket_bob.recv())
-
-            # Check if this round is valid for secret sharing
-            # Count how many parties measured in Y basis
-            y_count = [basis, bob_basis, charlie_basis].count('Y')
-            all_bases.append(f"{basis}{bob_basis}{charlie_basis}")
-
-            # Only keep rounds with even number of Y measurements
-            # This is based on GHZ state correlation properties
-            if y_count % 2 == 0:
-                # Check parity of measurement outcomes
-                # XOR all three outcomes to check correlation
-                xor_val = outcome ^ bob_outcome ^ charlie_outcome
-
-                # Verify correctness based on GHZ correlations
-                # For GHZ state |000⟩ + |111⟩:
-                if y_count == 0:
-                    # All X-basis (XXX): expect even parity (XOR = 0)
-                    is_correct = (xor_val == 0)
-                else:
-                    # Two Y-basis (XYY, YXY, YYX): expect odd parity (XOR = 1)
-                    # This follows from GHZ state phase relationships
-                    is_correct = (xor_val == 1)
-
-                # Record if this round matched expected correlation
-                valid_results.append(1 if is_correct else 0)
-
-    # Calculate protocol statistics
-    valid = len(valid_results)  # Number of rounds with even Y-count
-    correct = sum(valid_results)  # Number of rounds with correct correlations
-
-    # QBER (Quantum Bit Error Rate): fraction of valid rounds with errors
-    # High QBER indicates presence of eavesdropper or noisy channel
-    qber = 1 - (correct / valid) if valid > 0 else 0
+    print(qber)
 
     return {
         "role": "alice",
         "num_rounds": num_rounds,
-        "valid_rounds": valid,
-        "correct": correct,
         "qber": round(qber, 4),
-        "key_rate": round(valid / num_rounds, 4)  # Fraction of rounds that were valid
+        "key_rate": round(valid_amount / num_rounds, 4)  # Fraction of rounds that were valid
     }
 
 if __name__ == "__main__":
