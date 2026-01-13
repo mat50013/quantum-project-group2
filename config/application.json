@@ -16,38 +16,6 @@
     "roles": ["alice", "bob", "charlie"]
   },
   {
-    "title": "Noise Level",
-    "description": "Hardware noise probability",
-    "values": [
-      {
-        "name": "noise_level",
-        "default_value": 0.0,
-        "minimum_value": 0.0,
-        "maximum_value": 0.5,
-        "unit": "",
-        "scale_value": 1.0
-      }
-    ],
-    "input_type": "number",
-    "roles": ["alice"]
-  },
-  {
-    "title": "Eve Present",
-    "description": "Enable eavesdropper (0=no, 1=yes)",
-    "values": [
-      {
-        "name": "eve_present",
-        "default_value": 0,
-        "minimum_value": 0,
-        "maximum_value": 1,
-        "unit": "",
-        "scale_value": 1.0
-      }
-    ],
-    "input_type": "number",
-    "roles": ["alice", "bob", "charlie"]
-  },
-  {
     "title": "X coordinate",
     "description": "Network position X",
     "values": [
