@@ -1,0 +1,20 @@
+{
+  "application": {
+    "name": "ghz-state",
+    "description": "Creation of Greenberger-Horne-Zeilinger (GHZ) state",
+    "multi_round": false
+  },
+  "remote": {
+    "application": "https://api.quantum-network.com/applications/50/",
+    "application_id": 50,
+    "slug": "ghz-state",
+    "app_version": {
+      "enabled": false,
+      "version": 4,
+      "app_version": "https://api.quantum-network.com/app-versions/110/",
+      "app_config": "https://api.quantum-network.com/app-configs/110/",
+      "app_result": "https://api.quantum-network.com/app-results/110/",
+      "app_source": "https://api.quantum-network.com/app-sources/105/"
+    }
+  }
+}

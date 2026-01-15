@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Number of GHZ states",
+    "slug": "number_of_ghz_state",
+    "description": "Please specify the number of GHZ states to be generated.",
+    "values": [
+      {
+        "name": "num_states",
+        "default_value": 10,
+        "minimum_value": 0,
+        "maximum_value": 1000,
+        "unit": "",
+        "scale_value": 1.0
+      }
+    ],
+    "input_type": "number",
+    "roles": [
+      "alice",
+      "bob",
+      "charlie"
+    ]
+  }
+]
