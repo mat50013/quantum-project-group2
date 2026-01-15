@@ -5,7 +5,7 @@
     "values": [
       {
         "name": "num_rounds",
-        "default_value": 10,
+        "default_value": 200,
         "minimum_value": 1,
         "maximum_value": 1000,
         "unit": "",

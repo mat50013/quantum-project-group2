@@ -26,6 +26,10 @@ def distribute_ghz_states(conn, down_epr_socket, down_socket, up_epr_socket, up_
         q.H()
         m = q.measure()
         conn.flush()
+        down_socket.recv_silent()
+        down_socket.send_silent("")
+        up_socket.send_silent("")
+        up_socket.recv_silent()
         outcomes[i] = int(m)
 
     return bases, outcomes
