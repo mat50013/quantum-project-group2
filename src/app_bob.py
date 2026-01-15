@@ -9,14 +9,12 @@ from netqasm.sdk.toolbox.multi_node import create_ghz
 
 import random
 
-def distribute_ghz_states(conn, down_epr_socket, down_socket, up_epr_socket, up_socket, n_bits):
+def distribute_ghz_states(conn, up_epr_socket, up_socket, n_bits):
     bases = [random.randint(0, 1) for _ in range(n_bits)] # 0 = X, 1 = Y
     outcomes = [None for _ in range(n_bits)]
 
     for i in range(n_bits):
         q, _ = create_ghz(
-            down_epr_socket=down_epr_socket,
-            down_socket=down_socket,
             up_epr_socket=up_epr_socket,
             up_socket=up_socket,
             do_corrections=True
@@ -99,21 +97,19 @@ class TripletInfo:
 def main(app_config=None, num_rounds=4):
     # Initialize classical communication sockets
     alice_socket = Socket("bob", "alice", log_config=app_config.log_config)
-    charlie_socket = Socket("bob", "charlie", log_config=app_config.log_config)
 
     # Initialize quantum EPR sockets for entanglement with Alice and Charlie
     alice_epr_socket = EPRSocket("alice")
-    charlie_epr_socket = EPRSocket("charlie")
 
     # Create NetQASM connection for quantum operations
     bob = NetQASMConnection(
         "bob",
         log_config=app_config.log_config,
-        epr_sockets=[alice_epr_socket, charlie_epr_socket]
+        epr_sockets=[alice_epr_socket]
     )
 
     with bob:
-        bases, outcomes = distribute_ghz_states(bob, alice_epr_socket, alice_socket, charlie_epr_socket, charlie_socket, num_rounds)
+        bases, outcomes = distribute_ghz_states(bob, alice_epr_socket, alice_socket, num_rounds)
 
     triplets_info = []
     for i in range(num_rounds):

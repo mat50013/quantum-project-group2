@@ -96,20 +96,19 @@ class TripletInfo:
 def main(app_config=None, num_rounds=4):
     # Initialize classical communication sockets
     alice_socket = Socket("charlie", "alice", log_config=app_config.log_config)
-    bob_socket = Socket("charlie", "bob", log_config=app_config.log_config)
 
     # Initialize quantum EPR socket for entanglement generation with Bob
-    bob_epr_socket = EPRSocket("bob")
+    alice_epr_socket = EPRSocket("alice")
 
     # Create NetQASM connection for quantum operations
     charlie = NetQASMConnection(
         "charlie",
         log_config=app_config.log_config,
-        epr_sockets=[bob_epr_socket]
+        epr_sockets=[alice_epr_socket]
     )
 
     with charlie:
-        bases, outcomes = distribute_ghz_states(charlie, bob_epr_socket, bob_socket, num_rounds)
+        bases, outcomes = distribute_ghz_states(charlie, alice_epr_socket, alice_socket, num_rounds)
 
     triplets_info = []
     for i in range(num_rounds):
