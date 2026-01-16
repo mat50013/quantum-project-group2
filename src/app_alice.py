@@ -7,29 +7,35 @@ from netqasm.sdk import EPRSocket
 from netqasm.sdk.toolbox.multi_node import create_ghz
 
 import random
+from rich.progress import Progress, TimeElapsedColumn, SpinnerColumn, MofNCompleteColumn
 
 def distribute_ghz_states(conn, down_epr_socket, down_socket, up_epr_socket, up_socket, n_bits):
     bases = [random.randint(0, 1) for _ in range(n_bits)] # 0 = X, 1 = Y
     outcomes = [None for _ in range(n_bits)]
 
-    for i in range(n_bits):
-        q, _ = create_ghz(
-            down_epr_socket=down_epr_socket,
-            down_socket=down_socket,
-            up_epr_socket=up_epr_socket,
-            up_socket=up_socket,
-            do_corrections=True
-        )
-        if bases[i] == 1:
-            q.rot_Z(n=3, d=1)
-        q.H()
-        m = q.measure()
-        conn.flush()
-        down_socket.recv_silent()
-        down_socket.send_silent("")
-        up_socket.send_silent("")
-        up_socket.recv_silent()
-        outcomes[i] = int(m)
+    with Progress(SpinnerColumn(), *Progress.get_default_columns(), TimeElapsedColumn(), MofNCompleteColumn()) as p:
+        task = p.add_task("Distributing GHZ states...", total=n_bits)
+
+        for i in range(n_bits):
+            q, _ = create_ghz(
+                down_epr_socket=down_epr_socket,
+                down_socket=down_socket,
+                up_epr_socket=up_epr_socket,
+                up_socket=up_socket,
+                do_corrections=True
+            )
+            if bases[i] == 1:
+                q.rot_Z(n=3, d=1)
+            q.H()
+            m = q.measure()
+            conn.flush()
+            down_socket.recv_silent()
+            down_socket.send_silent("")
+            up_socket.send_silent("")
+            up_socket.recv_silent()
+            outcomes[i] = int(m)
+
+            p.update(task, advance=1)
 
     return bases, outcomes
 
@@ -158,7 +164,7 @@ def main(app_config=None, num_rounds=10, eve_intercept=0):
 
     qber = calculate_qber(triplets_info, max(valid_amount // 4, 1)) if valid_amount > 0 else -1
 
-    print(qber)
+    print("QBER: " + str(round(qber, 2)))
 
     return {
         "role": "alice",
