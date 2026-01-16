@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-import math
 from typing import Optional
 
 from netqasm.sdk.classical_communication.message import StructuredMessage
@@ -116,24 +115,29 @@ class TripletInfo:
     # Charlie measurement outcome (0 or 1).
     charlie_outcome: Optional[int] = None
 
-def main(app_config=None, num_rounds=4):
+def main(app_config=None, num_rounds=10, eve_intercept=0):
     # Initialize classical communication sockets
     bob_socket = Socket("alice", "bob", log_config=app_config.log_config)
     charlie_socket = Socket("alice", "charlie", log_config=app_config.log_config)
+    eve_socket = Socket("alice", "eve", log_config=app_config.log_config)
 
     # Initialize quantum EPR sockets for entanglement generation
     bob_epr_socket = EPRSocket("bob")
     charlie_epr_socket = EPRSocket("charlie")
+    eve_epr_socket = EPRSocket("eve")
 
     # Create NetQASM connection for quantum operations
     alice = NetQASMConnection(
         "alice",
         log_config=app_config.log_config,
-        epr_sockets=[bob_epr_socket, charlie_epr_socket]
+        epr_sockets=[bob_epr_socket, charlie_epr_socket, eve_epr_socket]
     )
 
     with alice:
-        bases, outcomes = distribute_ghz_states(alice, bob_epr_socket, bob_socket, charlie_epr_socket, charlie_socket, num_rounds)
+        if eve_intercept == 0:
+            bases, outcomes = distribute_ghz_states(alice, bob_epr_socket, bob_socket, charlie_epr_socket, charlie_socket, num_rounds)
+        else:
+            bases, outcomes = distribute_ghz_states(alice, eve_epr_socket, eve_socket, charlie_epr_socket, charlie_socket, num_rounds)
 
     triplets_info = []
     for i in range(num_rounds):

@@ -5,7 +5,7 @@
     "values": [
       {
         "name": "num_rounds",
-        "default_value": 200,
+        "default_value": 100,
         "minimum_value": 1,
         "maximum_value": 1000,
         "unit": "",
@@ -13,6 +13,22 @@
       }
     ],
     "input_type": "number",
-    "roles": ["alice", "bob", "charlie"]
+    "roles": ["alice", "bob", "charlie", "eve"]
+  },
+  {
+    "title": "Evesdropping",
+    "description": "Does eve intercept bob's qubit?",
+    "values": [
+      {
+        "name": "eve_intercept",
+        "default_value": 1,
+        "minimum_value": 0,
+        "maximum_value": 1,
+        "unit": "",
+        "scale_value": 1.0
+      }
+    ],
+    "input_type": "number",
+    "roles": ["alice", "bob", "charlie", "eve"]
   }
 ]

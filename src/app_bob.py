@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-import math
 from typing import Optional
 
 from netqasm.sdk.classical_communication.message import StructuredMessage
@@ -26,6 +25,33 @@ def distribute_ghz_states(conn, up_epr_socket, up_socket, n_bits):
         conn.flush()
         up_socket.send_silent("")
         up_socket.recv_silent()
+        outcomes[i] = int(m)
+
+    return bases, outcomes
+
+def receive_from_eve(conn, eve_epr_socket, eve_socket, n_bits):
+    bases = [random.randint(0, 1) for _ in range(n_bits)] # 0 = X, 1 = Y
+    outcomes = [None for _ in range(n_bits)]
+
+    for i in range(n_bits):
+        q = eve_epr_socket.recv_keep()[0]
+        m1 = eve_socket.recv_structured().payload
+        m2 = eve_socket.recv_structured().payload
+
+        if m2 == 1:
+            q.X()
+        if m1 == 1:
+            q.Z()
+
+        if bases[i] == 1:
+            q.rot_Z(n=3, d=1)
+        q.H()
+        m = q.measure()
+
+        conn.flush()
+
+        eve_socket.recv_silent()
+        eve_socket.send_silent("")
         outcomes[i] = int(m)
 
     return bases, outcomes
@@ -96,22 +122,27 @@ class TripletInfo:
     # Charlie measurement outcome (0 or 1).
     charlie_outcome: Optional[int] = None
 
-def main(app_config=None, num_rounds=4):
+def main(app_config=None, num_rounds=4, eve_intercept=0):
     # Initialize classical communication sockets
     alice_socket = Socket("bob", "alice", log_config=app_config.log_config)
+    eve_socket = Socket("bob", "eve", log_config=app_config.log_config)
 
-    # Initialize quantum EPR sockets for entanglement with Alice and Charlie
+    # Initialize quantum EPR sockets for entanglement with Alice and Eve
     alice_epr_socket = EPRSocket("alice")
+    eve_epr_socket = EPRSocket("eve")
 
     # Create NetQASM connection for quantum operations
     bob = NetQASMConnection(
         "bob",
         log_config=app_config.log_config,
-        epr_sockets=[alice_epr_socket]
+        epr_sockets=[alice_epr_socket, eve_epr_socket]
     )
 
     with bob:
-        bases, outcomes = distribute_ghz_states(bob, alice_epr_socket, alice_socket, num_rounds)
+        if eve_intercept == 0:
+            bases, outcomes = distribute_ghz_states(bob, alice_epr_socket, alice_socket, num_rounds)
+        else:
+            bases, outcomes = receive_from_eve(bob, eve_epr_socket, eve_socket, num_rounds)
 
     triplets_info = []
     for i in range(num_rounds):

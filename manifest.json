@@ -10,11 +10,11 @@
     "slug": "hbb99-quantum-secret-sharing",
     "app_version": {
       "enabled": false,
-      "version": 2,
-      "app_version": "https://api.quantum-network.com/app-versions/113/",
-      "app_config": "https://api.quantum-network.com/app-configs/113/",
-      "app_result": "https://api.quantum-network.com/app-results/113/",
-      "app_source": "https://api.quantum-network.com/app-sources/108/"
+      "version": 4,
+      "app_version": "https://api.quantum-network.com/app-versions/115/",
+      "app_config": "https://api.quantum-network.com/app-configs/115/",
+      "app_result": "https://api.quantum-network.com/app-results/115/",
+      "app_source": "https://api.quantum-network.com/app-sources/110/"
     }
   }
 }

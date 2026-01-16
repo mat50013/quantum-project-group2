@@ -1,5 +1,4 @@
 from dataclasses import dataclass
-import math
 from typing import Optional
 
 from netqasm.sdk.classical_communication.message import StructuredMessage
@@ -95,7 +94,7 @@ class TripletInfo:
     # Charlie measurement outcome (0 or 1).
     charlie_outcome: Optional[int] = None
 
-def main(app_config=None, num_rounds=4):
+def main(app_config=None, num_rounds=4, eve_intercept=0):
     # Initialize classical communication sockets
     alice_socket = Socket("charlie", "alice", log_config=app_config.log_config)
 
