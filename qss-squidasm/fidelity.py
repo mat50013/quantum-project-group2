@@ -7,15 +7,20 @@ from simulate import simulate, get_qbers
 
 def simulate_fidelity_qber(fidelity: float):
     print(f"Simulating for {fidelity * 100:.1f}% link fidelity")
+    start_time = time.time()
+
     dealer_results, recipients_results = simulate(
         "alice",
         ["bob", "charlie", "diana"],
         32,
-        50,
+        128,
         fidelity
     )
 
     qbers = get_qbers(dealer_results, recipients_results)
+
+    print(f"Done for {fidelity * 100:.1f}% link fidelity in {time.time() - start_time}s")
+
     return fidelity, qbers
 
 def plot_fidelities():
@@ -45,6 +50,7 @@ def plot_fidelities():
 
     plt.xlabel("Link fidelity")
     plt.ylabel("QBER")
+    plt.ylim(0, 1)
     plt.title("QBER vs Link fidelity")
 
     plt.show()
@@ -76,6 +82,7 @@ def plot_fidelities_sequential():
 
     plt.xlabel("Link fidelity")
     plt.ylabel("QBER")
+    plt.ylim(0, 1)
     plt.title("QBER vs Link fidelity")
 
     plt.show()

@@ -2,6 +2,7 @@ import time
 import numpy as np
 from simulate import simulate, get_qbers
 from fidelity import plot_fidelities
+from recipient_count import plot_recipient_counts
 
 def basic():
     start_time = time.time()
@@ -26,3 +27,4 @@ def basic():
 if __name__ == "__main__":
     # basic()
     plot_fidelities()
+    # plot_recipient_counts()
