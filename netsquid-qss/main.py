@@ -135,8 +135,9 @@ def plot_eve_impact_fidelity(fidelities=None, recipients=None, n_trials=16):
         qbers_eve = []
 
         for _ in range(n_trials):
-            stats_clean = run_simulation("Alice", ["Bob", "Charlie"], 128, fidelity=fidelity)
-            stats_eve = run_simulation("Alice", ["Bob", "Charlie"], 128, fidelity=fidelity, eve_target="Bob")
+            # Fixed: now uses the recipients parameter
+            stats_clean = run_simulation("Alice", recipients, 128, fidelity=fidelity)
+            stats_eve = run_simulation("Alice", recipients, 128, fidelity=fidelity, eve_target=recipients[0])
             qbers_clean.append(stats_clean['qber'] / 100)
             qbers_eve.append(stats_eve['qber'] / 100)
 
@@ -184,7 +185,6 @@ def plot_eve_impact_fidelity(fidelities=None, recipients=None, n_trials=16):
         eve_mean = np.mean(results[fidelity]['eve'])
         diff = eve_mean - clean_mean
         print(f"{fidelity*100:>6.1f}%     {clean_mean:>10.4f}   {eve_mean:>10.4f}   {diff:>10.4f}")
-
 def simulate_recipient_count_qber(recipient_count: int):
     print(f"Simulating for {recipient_count} recipients")
     start_time = time.time()
@@ -251,5 +251,5 @@ if __name__ == "__main__":
     #compare_eve()
     # vary_recipients()
     #plot_fidelities()
-    #plot_eve_impact_fidelity(recipients=7)
-    plot_recipient_counts()
+    plot_eve_impact_fidelity(recipients=7)
+    #plot_recipient_counts()
