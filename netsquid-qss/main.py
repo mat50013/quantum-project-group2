@@ -185,10 +185,71 @@ def plot_eve_impact_fidelity(fidelities=None, recipients=None, n_trials=16):
         diff = eve_mean - clean_mean
         print(f"{fidelity*100:>6.1f}%     {clean_mean:>10.4f}   {eve_mean:>10.4f}   {diff:>10.4f}")
 
+def simulate_recipient_count_qber(recipient_count: int):
+    print(f"Simulating for {recipient_count} recipients")
+    start_time = time.time()
+
+    recipients = [f"r{i}" for i in range(recipient_count)]
+
+    qbers = []
+    for _ in range(32):
+        stats = run_simulation(
+            "alice",
+            recipients,
+            n_rounds=128,
+            eve_target=None,
+            fidelity=0.99
+        )
+        qbers.append(stats['qber'] / 100)  # Convert to 0-1 range
+
+    print(f"Done for {recipient_count} recipients in {time.time() - start_time}s")
+
+    return recipient_count, qbers
+
+
+def plot_recipient_counts():
+    start_time = time.time()
+
+    recipient_counts = [2, 3, 4, 5, 10]
+    qbers_per_count = {}
+
+    with ProcessPoolExecutor() as executor:
+        futures = [
+            executor.submit(simulate_recipient_count_qber, recipient_count)
+            for recipient_count in recipient_counts
+        ]
+
+        for future in as_completed(futures):
+            recipient_count, qbers = future.result()
+            qbers_per_count[recipient_count] = qbers
+
+    qbers_per_count = [qbers_per_count[recipient_count] for recipient_count in recipient_counts]
+
+    recipient_count_labels = [str(recipient_count) for recipient_count in recipient_counts]
+
+    plt.boxplot(
+        qbers_per_count,
+        tick_labels=recipient_count_labels,
+        showmeans=True
+    )
+
+    plt.xlabel("Recipient count")
+    plt.ylabel("QBER")
+    plt.ylim(0, 0.35)
+    plt.title("QBER vs Recipient count")
+
+    plt.show()
+
+    print()
+    print(f"Simulation time: {time.time() - start_time}s")
+    print("Mean QBER:")
+    for recipient_count, qbers in zip(recipient_counts, qbers_per_count):
+        print(f"\t{recipient_count} recipients: {np.mean(qbers)}")
 
 if __name__ == "__main__":
     #basic()
     #compare_eve()
     # vary_recipients()
     #plot_fidelities()
-    plot_eve_impact_fidelity(recipients=7)
+    #plot_eve_impact_fidelity(recipients=7)
+    plot_recipient_counts()
