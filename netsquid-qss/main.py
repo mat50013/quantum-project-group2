@@ -246,10 +246,196 @@ def plot_recipient_counts():
     for recipient_count, qbers in zip(recipient_counts, qbers_per_count):
         print(f"\t{recipient_count} recipients: {np.mean(qbers)}")
 
+
+def plot_detection_confidence(
+        recipients=None,
+        fidelities=None,
+        round_counts=None,
+        n_trials=30,
+        confidence_target=0.99
+):
+    """
+    Plot Eve detection confidence vs protocol rounds for different fidelities.
+
+    Args:
+        recipients: List of recipient names or int for count (default: 3)
+        fidelities: List of fidelity values to compare (default: [0.95, 0.99, 0.999])
+        round_counts: List of round counts to test (default: [10, 25, 50, 100, 200])
+        n_trials: Number of trials per data point (default: 30)
+        confidence_target: Target detection probability (default: 0.99)
+    """
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from concurrent.futures import ProcessPoolExecutor, as_completed
+    from simulate import run_simulation
+
+    # Handle recipients
+    if recipients is None:
+        recipients = ["Bob", "Charlie", "Diana"]
+    elif isinstance(recipients, int):
+        if not (1 <= recipients <= 10):
+            raise ValueError("Recipients must be between 1 and 10")
+        recipients = [f"R{i+1}" for i in range(recipients)]
+
+    # Defaults
+    if fidelities is None:
+        fidelities = [0.95, 0.99, 0.999]
+    if round_counts is None:
+        round_counts = [10, 25, 50, 100, 200]
+
+    print(f"Configuration:")
+    print(f"  Recipients: {len(recipients)} ({', '.join(recipients)})")
+    print(f"  Fidelities: {fidelities}")
+    print(f"  Round counts: {round_counts}")
+    print(f"  Trials per point: {n_trials}")
+    print()
+
+    results = {}
+
+    for fidelity in fidelities:
+        print(f"\n{'='*50}")
+        print(f"Testing fidelity: {fidelity*100:.1f}%")
+        print('='*50)
+
+        # Establish baseline threshold for this fidelity
+        print("Establishing baseline (no Eve)...")
+        baseline_qbers = []
+        for i in range(n_trials):
+            stats = run_simulation(
+                "Alice", recipients, 200,
+                fidelity=fidelity, verbose=False
+            )
+            if stats['valid_rounds'] > 0:
+                baseline_qbers.append(stats['qber'])
+
+        threshold = np.percentile(baseline_qbers, 95)
+        baseline_mean = np.mean(baseline_qbers)
+        baseline_std = np.std(baseline_qbers)
+        print(f"  Baseline QBER: {baseline_mean:.2f}% ± {baseline_std:.2f}%")
+        print(f"  Detection threshold (95th pct): {threshold:.2f}%")
+
+        # Test each round count
+        detection_probs = []
+        false_positive_rates = []
+        eve_qbers = []
+
+        for n_rounds in round_counts:
+            print(f"\n  Testing {n_rounds} rounds...")
+
+            eve_detected = 0
+            clean_false_alarms = 0
+            round_eve_qbers = []
+
+            for _ in range(n_trials):
+                # With Eve
+                stats_eve = run_simulation(
+                    "Alice", recipients, n_rounds,
+                    eve_target=recipients[0],
+                    fidelity=fidelity, verbose=False
+                )
+                if stats_eve['valid_rounds'] > 0:
+                    round_eve_qbers.append(stats_eve['qber'])
+                    if stats_eve['qber'] > threshold:
+                        eve_detected += 1
+
+                # Without Eve
+                stats_clean = run_simulation(
+                    "Alice", recipients, n_rounds,
+                    fidelity=fidelity, verbose=False
+                )
+                if stats_clean['valid_rounds'] > 0 and stats_clean['qber'] > threshold:
+                    clean_false_alarms += 1
+
+            detection_prob = eve_detected / n_trials
+            false_positive = clean_false_alarms / n_trials
+
+            detection_probs.append(detection_prob)
+            false_positive_rates.append(false_positive)
+            eve_qbers.append(np.mean(round_eve_qbers) if round_eve_qbers else 0)
+
+            print(f"    Detection: {detection_prob*100:.1f}% | FP: {false_positive*100:.1f}% | Eve QBER: {eve_qbers[-1]:.1f}%")
+
+        results[fidelity] = {
+            'threshold': threshold,
+            'baseline_mean': baseline_mean,
+            'baseline_std': baseline_std,
+            'detection_probs': detection_probs,
+            'false_positive_rates': false_positive_rates,
+            'eve_qbers': eve_qbers
+        }
+
+    # Plotting
+    fig, axes = plt.subplots(1, 2, figsize=(14, 6))
+
+    colors = plt.cm.viridis(np.linspace(0.2, 0.8, len(fidelities)))
+
+    # Plot 1: Detection probability vs rounds
+    ax1 = axes[0]
+    for idx, fidelity in enumerate(fidelities):
+        ax1.plot(
+            round_counts,
+            results[fidelity]['detection_probs'],
+            '-o', color=colors[idx], linewidth=2, markersize=8,
+            label=f'Fidelity {fidelity*100:.1f}%'
+        )
+
+    ax1.axhline(y=confidence_target, color='red', linestyle='--',
+                alpha=0.7, linewidth=2, label=f'{confidence_target*100:.0f}% Target')
+    ax1.set_xlabel('Number of Protocol Rounds', fontsize=12)
+    ax1.set_ylabel('Eve Detection Probability', fontsize=12)
+    ax1.set_ylim(0, 1.05)
+    ax1.set_title('Eve Detection Rate vs Protocol Rounds', fontsize=14)
+    ax1.legend(loc='lower right')
+    ax1.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    plt.show()
+
+    # Summary table
+    print("\n" + "="*70)
+    print("SUMMARY: Rounds needed for target detection confidence")
+    print("="*70)
+    print(f"{'Fidelity':<12} {'Threshold':<12} {'QBER Gap':<12} {'Rounds for ' + str(int(confidence_target*100)) + '%':<15}")
+    print("-"*70)
+
+    best_fidelity = None
+    best_rounds = float('inf')
+
+    for fidelity in fidelities:
+        r = results[fidelity]
+        qber_gap = np.mean(r['eve_qbers']) - r['baseline_mean']
+
+        rounds_needed = ">500"
+        for i, prob in enumerate(r['detection_probs']):
+            if prob >= confidence_target:
+                rounds_needed = round_counts[i]
+                if rounds_needed < best_rounds:
+                    best_rounds = rounds_needed
+                    best_fidelity = fidelity
+                break
+
+        print(f"{fidelity*100:>6.1f}%     {r['threshold']:>8.2f}%    {qber_gap:>8.2f}%     {rounds_needed}")
+
+    print("-"*70)
+    if best_fidelity:
+        print(f"✓ BEST: {best_fidelity*100:.1f}% fidelity — achieves {confidence_target*100:.0f}% detection in {best_rounds} rounds")
+    else:
+        print(f"✗ No fidelity achieved {confidence_target*100:.0f}% detection within tested rounds")
+
+    return results
+
+
 if __name__ == "__main__":
     #basic()
     #compare_eve()
     # vary_recipients()
     #plot_fidelities()
-    plot_eve_impact_fidelity(recipients=7)
+    #plot_eve_impact_fidelity(recipients=7)
     #plot_recipient_counts()
+    plot_detection_confidence(
+        recipients=5,
+        fidelities=[0.75, 0.81, 0.90, 0.95, 0.999],
+        round_counts=[10, 25, 50, 100],
+        n_trials=50,
+        confidence_target=0.99
+    )

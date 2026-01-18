@@ -6,7 +6,6 @@ from protocols import DealerProtocol, PartyProtocol
 from eve import EveInterceptProtocol
 from validation import is_valid_round, check_ghz_parity, verify_secret_sharing
 
-
 def run_single_round(nodes: Dict, dealer_name: str, recipient_names: List[str],
                      eve_node=None, eve_target: str = None) -> Dict:
     """
