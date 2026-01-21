@@ -3,6 +3,7 @@ from simulate import run_simulation
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import matplotlib.pyplot as plt
 import numpy as np
+import multiprocessing as mp
 
 def basic():
     start_time = time.time()
@@ -62,18 +63,21 @@ def simulate_fidelity_qber(fidelity: float):
     start_time = time.time()
 
     qbers = []
-    for _ in range(32):
+    valid_round_counts = []
+    for i in range(512):
+        print(f"Round {i + 1}")
         stats = run_simulation(
             "Alice",
             ["Bob", "Charlie", "Diana"],
-            n_rounds=128,
+            n_rounds=256,
             eve_target=None,
             fidelity=fidelity
         )
         qbers.append(stats['qber'] / 100)  # Convert to 0-1 range
+        valid_round_counts.append(stats['valid_rounds'])
 
     print(f"Done for {fidelity * 100:.1f}% in {time.time() - start_time:.1f}s")
-    return fidelity, qbers
+    return fidelity, qbers, valid_round_counts
 
 
 def plot_fidelities():
@@ -81,17 +85,21 @@ def plot_fidelities():
 
     fidelities = [0.75, 0.90, 0.95, 0.99, 0.999]
     qbers_per_fidelity = {}
+    valid_round_counts_per_fidelity = {}
 
+    mp.set_start_method("spawn", force=True)
     with ProcessPoolExecutor() as executor:
         futures = [
             executor.submit(simulate_fidelity_qber, fidelity)
             for fidelity in fidelities
         ]
         for future in as_completed(futures):
-            fidelity, qbers = future.result()
+            fidelity, qbers, valid_round_counts = future.result()
             qbers_per_fidelity[fidelity] = qbers
+            valid_round_counts_per_fidelity[fidelity] = valid_round_counts
 
     qbers_per_fidelity = [qbers_per_fidelity[f] for f in fidelities]
+    valid_round_counts_per_fidelity = [valid_round_counts_per_fidelity[f] for f in fidelities]
     fidelity_labels = [f"{f*100:.1f}%" for f in fidelities]
 
     plt.boxplot(qbers_per_fidelity, tick_labels=fidelity_labels, showmeans=True)
@@ -106,6 +114,21 @@ def plot_fidelities():
     for fidelity, qbers in zip(fidelities, qbers_per_fidelity):
         print(f"\tFidelity {fidelity*100:.1f}%: {np.mean(qbers):.4f}")
 
+    print("\nBinomial statistics:")
+    for fidelity, qbers, valid_round_counts in zip(fidelities, qbers_per_fidelity, valid_round_counts_per_fidelity):
+        error_counts = np.multiply(qbers, valid_round_counts)
+
+        # P is the parameter of binomial distribution = weighted mean QBER
+        p = np.sum(error_counts) / np.sum(valid_round_counts)
+
+        # Calculate expected variances
+        binomial_variances = np.array(valid_round_counts) * p * (1 - p)
+        expected_variance = np.mean(binomial_variances)
+
+        # Validate the observed variance matches that of a binomial model
+        observed_variance = np.var(error_counts)
+
+        print(f"\tFidelity {fidelity*100:.1f}%: p = {p:.4f}, s^2 = {observed_variance}, Var_bin = {expected_variance}, D = {observed_variance / expected_variance:.4f}")
 
 def plot_eve_impact_fidelity(fidelities=None, recipients=None, n_trials=16):
     """
@@ -427,15 +450,15 @@ def plot_detection_confidence(
 
 if __name__ == "__main__":
     #basic()
-    #compare_eve()
+    # compare_eve()
     # vary_recipients()
-    #plot_fidelities()
-    #plot_eve_impact_fidelity(recipients=7)
+    plot_fidelities()
+    # plot_eve_impact_fidelity(recipients=4)
     #plot_recipient_counts()
-    plot_detection_confidence(
-        recipients=5,
-        fidelities=[0.75, 0.81, 0.90, 0.95, 0.999],
-        round_counts=[10, 25, 50, 100],
-        n_trials=50,
-        confidence_target=0.99
-    )
+    # plot_detection_confidence(
+    #     recipients=5,
+    #     fidelities=[0.75, 0.81, 0.90, 0.95, 0.999],
+    #     round_counts=[10, 25, 50, 100],
+    #     n_trials=50,
+    #     confidence_target=0.99
+    # )
