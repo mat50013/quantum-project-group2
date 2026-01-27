@@ -1,0 +1,15 @@
+{
+  "round_result_view": [
+    [
+      {
+        "output_type": "text",
+        "title": "QBER",
+        "parameters": {
+          "content": "{{ $.app_alice.qber }}"
+        }
+      }
+    ]
+  ],
+  "cumulative_result_view": [],
+  "final_result_view": []
+}
