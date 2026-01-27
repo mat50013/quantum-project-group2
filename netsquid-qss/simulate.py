@@ -6,33 +6,18 @@ from protocols import DealerProtocol, PartyProtocol
 from eve import EveInterceptProtocol
 from validation import is_valid_round, check_ghz_parity, verify_secret_sharing
 
-def run_single_round(nodes: Dict, dealer_name: str, recipient_names: List[str],
-                     eve_node=None, eve_target: str = None) -> Dict:
-    """
-    Run a single round of the protocol.
-
-    Returns:
-        Dict with bases, outcomes, validity, parity_check, secret_sharing results
-    """
-    # Reset
+def run_single_round(nodes: Dict, dealer_name: str, recipient_names: List[str], eve_node=None, eve_target: str = None) -> Dict:
     reset_network(nodes, eve_node)
     ns.sim_reset()
 
-    # Distribute GHZ state
     if eve_node and eve_target:
-        eve_protocol, _ = distribute_ghz_with_eve(
-            nodes, dealer_name, recipient_names,
-            eve_node, eve_target, EveInterceptProtocol
-        )
+        eve_protocol, _ = distribute_ghz_with_eve(nodes, dealer_name, recipient_names, eve_node, eve_target, EveInterceptProtocol)
     else:
         distribute_ghz_state(nodes, dealer_name, recipient_names)
 
-    # Create measurement protocols
     all_parties = [dealer_name] + recipient_names
 
-    dealer_protocol = DealerProtocol(
-        nodes[dealer_name], dealer_name, recipient_names
-    )
+    dealer_protocol = DealerProtocol(nodes[dealer_name], dealer_name, recipient_names)
 
     recipient_protocols = {}
     for recipient in recipient_names:
@@ -40,15 +25,12 @@ def run_single_round(nodes: Dict, dealer_name: str, recipient_names: List[str],
         protocol = PartyProtocol(nodes[recipient], recipient, other_parties)
         recipient_protocols[recipient] = protocol
 
-    # Start protocols
     dealer_protocol.start()
     for protocol in recipient_protocols.values():
         protocol.start()
 
-    # Run simulation
     ns.sim_run(duration=1000)
 
-    # Collect results
     bases = {dealer_name: dealer_protocol.basis}
     outcomes = {dealer_name: dealer_protocol.outcome}
 
@@ -56,12 +38,9 @@ def run_single_round(nodes: Dict, dealer_name: str, recipient_names: List[str],
         bases[recipient] = protocol.basis
         outcomes[recipient] = protocol.outcome
 
-    # Validate
     valid = is_valid_round(bases)
     parity_passed = check_ghz_parity(bases, outcomes) if valid else None
-    ss_success, ss_reconstructed, ss_actual = verify_secret_sharing(
-        bases, outcomes, dealer_name
-    ) if valid else (None, None, None)
+    ss_success, ss_reconstructed, ss_actual = verify_secret_sharing(bases, outcomes, dealer_name) if valid else (None, None, None)
 
     return {
         "bases": bases,
@@ -75,65 +54,27 @@ def run_single_round(nodes: Dict, dealer_name: str, recipient_names: List[str],
 
 
 def run_simulation(dealer_name: str, recipient_names: List[str], n_rounds: int, eve_target: str = None, verbose: bool = False, fidelity: float = 1.0) -> Dict:
-    """
-    Run multiple rounds of the protocol.
-
-    Args:
-        dealer_name: Name of dealer
-        recipient_names: List of recipient names
-        n_rounds: Number of rounds to run
-        eve_target: Recipient to intercept (None = no Eve)
-        verbose: Print detailed round info
-
-    Returns:
-        Dict with statistics
-    """
-    # Create network
     nodes, eve_node = create_network(dealer_name, recipient_names, eve_target, fidelity)
 
-    # Counters
     valid_rounds = 0
     passed_rounds = 0
     ss_successes = 0
 
     results_list = []
-
     for i in range(n_rounds):
-        if verbose:
-            print(f"\n--- Round {i+1}/{n_rounds} ---")
-        elif (i + 1) % 20 == 0:
-            print(f"  Progress: {i+1}/{n_rounds}")
-
-        result = run_single_round(
-            nodes, dealer_name, recipient_names,
-            eve_node, eve_target
-        )
+        result = run_single_round(nodes, dealer_name, recipient_names, eve_node, eve_target)
         results_list.append(result)
 
         if result["valid"]:
             valid_rounds += 1
-
             if result["parity_passed"]:
                 passed_rounds += 1
-
             if result["secret_sharing_success"]:
                 ss_successes += 1
 
-            if verbose:
-                print(f"  Bases: {result['bases']}")
-                print(f"  Valid: ✅")
-                print(f"  Parity: {'✅ PASS' if result['parity_passed'] else '❌ FAIL'}")
-                print(f"  Secret sharing: {'✅' if result['secret_sharing_success'] else '❌'}")
-        else:
-            if verbose:
-                print(f"  Bases: {result['bases']}")
-                print(f"  Valid: ❌ (discarded)")
-
-    # Calculate statistics
     error_rounds = valid_rounds - passed_rounds
     qber = (error_rounds / valid_rounds * 100) if valid_rounds > 0 else 0
     ss_rate = (ss_successes / valid_rounds * 100) if valid_rounds > 0 else 0
-
     return {
         "n_rounds": n_rounds,
         "valid_rounds": valid_rounds,
@@ -146,25 +87,3 @@ def run_simulation(dealer_name: str, recipient_names: List[str], n_rounds: int, 
         "eve_target": eve_target,
         "results": results_list,
     }
-
-
-def print_results(stats: Dict, title: str = "Results"):
-    """Pretty print simulation results."""
-    print(f"\n{'='*60}")
-    print(f"{title}")
-    print(f"{'='*60}")
-    print(f"Total rounds:        {stats['n_rounds']}")
-    print(f"Valid rounds:        {stats['valid_rounds']} ({stats['valid_rounds']/stats['n_rounds']*100:.1f}%)")
-    print(f"\n--- Security (Parity Check) ---")
-    print(f"Passed:              {stats['passed_rounds']}/{stats['valid_rounds']}")
-    print(f"Failed:              {stats['error_rounds']}/{stats['valid_rounds']}")
-    print(f"QBER:                {stats['qber']:.2f}%")
-    print(f"\n--- Secret Sharing ---")
-    print(f"Successful:          {stats['ss_successes']}/{stats['valid_rounds']} ({stats['ss_rate']:.1f}%)")
-
-    if stats['eve_present']:
-        print(f"\n⚠️  Eve intercepted: {stats['eve_target']}")
-    else:
-        print(f"\n✅ No eavesdropper")
-
-    print(f"{'='*60}")
