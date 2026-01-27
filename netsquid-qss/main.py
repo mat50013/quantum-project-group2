@@ -1,8 +1,12 @@
+import math
 import time
 from simulate import run_simulation
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import matplotlib.pyplot as plt
 import numpy as np
+import multiprocessing as mp
+from scipy.stats import beta, norm, binom
+
 
 def basic():
     start_time = time.time()
@@ -33,34 +37,42 @@ def simulate_fidelity_qber(fidelity: float):
     start_time = time.time()
 
     qbers = []
-    for _ in range(32):
+    valid_round_counts = []
+    for i in range(512):
+        print(f"Round {i + 1}")
         stats = run_simulation(
             "Alice",
             ["Bob", "Charlie", "Diana"],
-            n_rounds=128,
+            n_rounds=256,
             eve_target=None,
             fidelity=fidelity
         )
         qbers.append(stats['qber'] / 100)
+        valid_round_counts.append(stats['valid_rounds'])
 
     print(f"Done for {fidelity * 100:.1f}% in {time.time() - start_time:.1f}s")
-    return fidelity, qbers
+    return fidelity, qbers, valid_round_counts
 
 
 def plot_fidelities():
+    start_time = time.time()
     fidelities = [0.75, 0.90, 0.95, 0.99, 0.999]
     qbers_per_fidelity = {}
+    valid_round_counts_per_fidelity = {}
 
+    mp.set_start_method("spawn", force=True)
     with ProcessPoolExecutor() as executor:
         futures = [
             executor.submit(simulate_fidelity_qber, fidelity)
             for fidelity in fidelities
         ]
         for future in as_completed(futures):
-            fidelity, qbers = future.result()
+            fidelity, qbers, valid_round_counts = future.result()
             qbers_per_fidelity[fidelity] = qbers
+            valid_round_counts_per_fidelity[fidelity] = valid_round_counts
 
     qbers_per_fidelity = [qbers_per_fidelity[f] for f in fidelities]
+    valid_round_counts_per_fidelity = [valid_round_counts_per_fidelity[f] for f in fidelities]
     fidelity_labels = [f"{f*100:.1f}%" for f in fidelities]
 
     plt.boxplot(qbers_per_fidelity, tick_labels=fidelity_labels, showmeans=True)
@@ -70,6 +82,49 @@ def plot_fidelities():
     plt.title("QBER vs Link fidelity")
     plt.show()
 
+    print(f"\nSimulation time: {time.time() - start_time:.1f}s")
+    print("Mean QBER:")
+    for fidelity, qbers in zip(fidelities, qbers_per_fidelity):
+        print(f"\tFidelity {fidelity*100:.1f}%: {np.mean(qbers):.4f}")
+
+    print("\nBinomial statistics:")
+    for fidelity, qbers, valid_round_counts in zip(fidelities, qbers_per_fidelity, valid_round_counts_per_fidelity):
+        error_counts = np.multiply(qbers, valid_round_counts)
+
+        # P is the parameter of binomial distribution = weighted mean QBER
+        p = np.sum(error_counts) / np.sum(valid_round_counts)
+
+        # Calculate expected variances
+        binomial_variances = np.array(valid_round_counts) * p * (1 - p)
+        expected_variance = np.mean(binomial_variances)
+
+        # Validate the observed variance matches that of a binomial model
+        observed_variance = np.var(error_counts)
+
+        print(f"\tFidelity {fidelity*100:.1f}%: p = {p:.4f}, s^2 = {observed_variance}, Var_bin = {expected_variance}, D = {observed_variance / expected_variance:.4f}")
+
+        # Calculate P values
+        p_values = binom.sf(error_counts - 1, valid_round_counts, np.mean(qbers))
+        print(f"\tP value fails: {np.sum(p_values < 0.05)} / {len(p_values)}")
+
+def simulate_eve_impact(fidelity, recipients, n_trials):
+    qbers_clean = []
+    valid_rounds_clean = []
+    qbers_eve = []
+    valid_rounds_eve = []
+
+    for i in range(n_trials):
+        print(f"\nFidelity {fidelity*100:.1f}% round {i+1}/{n_trials}")
+        # Fixed: now uses the recipients parameter
+        stats_clean = run_simulation("Alice", recipients, 128, fidelity=fidelity)
+        stats_eve = run_simulation("Alice", recipients, 128, fidelity=fidelity, eve_target=recipients[0])
+        qbers_clean.append(stats_clean['qber'] / 100)
+        valid_rounds_clean.append(stats_clean['valid_rounds'])
+        qbers_eve.append(stats_eve['qber'] / 100)
+        valid_rounds_eve.append(stats_eve['valid_rounds'])
+
+    return fidelity, {'clean_qbers': qbers_clean, 'clean_valid_rounds': valid_rounds_clean, 'eve_qbers': qbers_eve,
+                         'eve_valid_rounds': valid_rounds_eve}
 
 def plot_eve_impact_fidelity(fidelities=None, recipients=None, n_trials=16):
     if fidelities is None:
@@ -85,20 +140,19 @@ def plot_eve_impact_fidelity(fidelities=None, recipients=None, n_trials=16):
     start_time = time.time()
     results = {}
 
-    for fidelity in fidelities:
-        qbers_clean = []
-        qbers_eve = []
+    mp.set_start_method("spawn", force=True)
+    with ProcessPoolExecutor() as executor:
+        futures = [
+            executor.submit(simulate_eve_impact, fidelity, recipients, n_trials)
+            for fidelity in fidelities
+        ]
+        for future in as_completed(futures):
+            fidelity, result = future.result()
+            results[fidelity] = result
 
-        for _ in range(n_trials):
-            stats_clean = run_simulation("Alice", recipients, 128, fidelity=fidelity)
-            stats_eve = run_simulation("Alice", recipients, 128, fidelity=fidelity, eve_target=recipients[0])
-            qbers_clean.append(stats_clean['qber'] / 100)
-            qbers_eve.append(stats_eve['qber'] / 100)
-
-        results[fidelity] = {'clean': qbers_clean, 'eve': qbers_eve}
-
-    qbers_clean_list = [results[f]['clean'] for f in fidelities]
-    qbers_eve_list = [results[f]['eve'] for f in fidelities]
+    # Prepare data for boxplot
+    qbers_clean_list = [results[f]['clean_qbers'] for f in fidelities]
+    qbers_eve_list = [results[f]['eve_qbers'] for f in fidelities]
 
     positions_clean = [i*2.5 for i in range(len(fidelities))]
     positions_eve = [i*2.5 + 0.8 for i in range(len(fidelities))]
@@ -122,6 +176,42 @@ def plot_eve_impact_fidelity(fidelities=None, recipients=None, n_trials=16):
     plt.grid(axis='y', alpha=0.3)
     plt.tight_layout()
     plt.show()
+
+    print(f"\nSimulation time: {time.time() - start_time:.1f}s")
+    print(f"Recipients: {', '.join(recipients)}")
+    print("\nMean QBER by fidelity:")
+    print(f"{'Fidelity':<12} {'No Eve':<12} {'With Eve':<12} {'Difference':<12}")
+    print("-" * 50)
+    for fidelity in fidelities:
+        clean_mean = np.mean(results[fidelity]['clean_qbers'])
+        eve_mean = np.mean(results[fidelity]['eve_qbers'])
+        diff = eve_mean - clean_mean
+        print(f"{fidelity*100:>6.1f}%     {clean_mean:>10.4f}   {eve_mean:>10.4f}   {diff:>10.4f}")
+
+    print("Eve detection:")
+    for fidelity in fidelities:
+        qbers_clean = results[fidelity]['clean_qbers']
+        valid_rounds_clean = results[fidelity]['clean_valid_rounds']
+        error_rounds_clean = np.multiply(qbers_clean, valid_rounds_clean)
+
+        qbers_eve = results[fidelity]['eve_qbers']
+        valid_rounds_eve = results[fidelity]['eve_valid_rounds']
+        error_rounds_eve = np.multiply(qbers_eve, valid_rounds_eve)
+
+        # Binomial parameter is the mean clean QBER
+        p = np.mean(qbers_clean)
+
+        p_values_clean = binom.sf(error_rounds_clean - 1, valid_rounds_clean, p)
+        p_values_eve = binom.sf(error_rounds_eve - 1, valid_rounds_eve, p)
+
+        clean_p_fails = np.sum(p_values_clean < 0.05)
+        eve_p_fails = np.sum(p_values_eve < 0.05)
+
+        print(f"Fidelity {fidelity*100:.1f}%")
+        print(f"\tClean P value fails: {clean_p_fails} / {len(p_values_clean)}")
+        print(f"\tEve P value fails: {eve_p_fails} / {len(p_values_eve)}")
+        print(f"\tFalse positive rate: {clean_p_fails / len(p_values_clean) * 100:.1f}%")
+        print(f"\tFalse negative rate: {(1 - eve_p_fails / len(p_values_eve)) * 100:.1f}%")
 
 def simulate_recipient_count_qber(recipient_count: int):
     start_time = time.time()
@@ -266,7 +356,14 @@ def plot_detection_confidence(recipients=None, fidelities=None, round_counts=Non
 
 if __name__ == "__main__":
     #basic()
-    #vary_recipients()
-    #plot_fidelities()
-    #plot_eve_impact_fidelity(recipients=7)
-    plot_recipient_counts()
+    # vary_recipients()
+    # plot_fidelities()
+    plot_eve_impact_fidelity(recipients=["Bob", "Charlie", "Diana"], n_trials=256)
+    #plot_recipient_counts()
+    # plot_detection_confidence(
+    #     recipients=5,
+    #     fidelities=[0.75, 0.81, 0.90, 0.95, 0.999],
+    #     round_counts=[10, 25, 50, 100],
+    #     n_trials=50,
+    #     confidence_target=0.99
+    # )
