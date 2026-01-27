@@ -1,0 +1,20 @@
+{
+  "application": {
+    "name": "HBB99 Quantum Secret Sharing",
+    "description": "",
+    "multi_round": false
+  },
+  "remote": {
+    "application": "https://api.quantum-network.com/applications/52/",
+    "application_id": 52,
+    "slug": "hbb99-quantum-secret-sharing",
+    "app_version": {
+      "enabled": false,
+      "version": 4,
+      "app_version": "https://api.quantum-network.com/app-versions/115/",
+      "app_config": "https://api.quantum-network.com/app-configs/115/",
+      "app_result": "https://api.quantum-network.com/app-results/115/",
+      "app_source": "https://api.quantum-network.com/app-sources/110/"
+    }
+  }
+}
