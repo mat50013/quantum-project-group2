@@ -327,7 +327,7 @@ if __name__ == "__main__":
     #vary_recipients()
     #plot_fidelities()
     #plot_eve_impact_fidelity(recipients=["Bob", "Charlie", "Diana"], n_trials=256)
-    #plot_recipient_counts()
+    plot_recipient_counts()
     #plot_detection_confidence(
     #     recipients=5,
     #     fidelities=[0.75, 0.81, 0.90, 0.95, 0.999],
